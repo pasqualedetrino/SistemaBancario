@@ -1,0 +1,18 @@
+\chapter{Implementazione} \label{cap2}
+\def\baselinestretch{1.66}
+Il progetto \`{e} sviluppato in modalit\`{a} Web Application in modo che il software possa risiedere su un server ed essere raggiungibile ed utilizzabile da diversi utenti tramite un comune browser web.\\
+\`{E} inoltre possibile in questo modo aggiornare l'applicazione solo sul server e offrire sempre un prodotto aggiornato agli utilizzatori.\\
+La web Application pu\`{o} anche essere estesa, \`{e} infatti possibile aggiungere funzionalit\`{a} anche abbastanza complesse poich\`{e}, girando su un server, la potenza dell'hardware \`{e} tale da soddisfare i requisiti tecnici.\\
+
+\section{Web Aplication}
+I principali vantaggi di una web application riguardano le possibilit\`{a} di utilizzare l'applicazione senza problemi di compatibilit\`{a} di versione di Java oppure di dipendenze da software esterni quali ad esempio DBMS o particolari librerie grafiche.\\
+\section{Web Server}
+Il Web Server si occupa di predisporre e restituire le pagine web al client.\\
+L'Applicaton Server si occupa di gestire la logica applicativa e interfacciarsi con altri moduli. \\
+Talvolta i ruoli sono fusi in un unico oggetto, definito Web Container,\\ Tomcat ne \`{e} un esempio.\\
+\subsection{Servlets}
+Le servlets sono classi Java che consentono l'interazione richiesta/risposta secondo il modello client/server utilizzando i metodi doGet e doPost.\\
+Il pattern MVC (Model View Controller), consente di separare la logica di presentazione da quella di business.\\
+Utilizzando le servlets \`{e} possibile congiungere le due logiche scambiando informazioni utilizzando i metodi estesi dalla classe HttpServlet.
+
+

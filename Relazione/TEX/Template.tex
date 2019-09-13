@@ -1,0 +1,85 @@
+\documentclass[12pt,italian,a4paper,oneside,openright]{book}
+\usepackage{url,amsfonts,epsfig}
+\usepackage[italian]{babel}
+\usepackage[latin1]{inputenc}
+%\usepackage[format=hang,font=footnotesize]{caption}
+\usepackage{amsmath}
+\usepackage{indentfirst}
+\usepackage{graphicx}
+%\usepackage{algorithm,algorithmic}
+\graphicspath{{img/}}
+\usepackage[hyperindex]{hyperref} %per l'indice interattivo
+\hypersetup{colorlinks=true, linkcolor=black} %per colorare i link
+\DeclareGraphicsRule{.jpg}{jpg}{}{} %da commentare per il PDF
+%\DeclareGraphicsRule{.bmp} {bmp}{}{} %da commentare per il PDF
+
+%%\setmarginsrb{1.5cm}{1.5cm}{1,2cm}{1,5cm}{0cm}{2cm}{2cm}{2cm}
+
+
+\title{Template per la tesina in .tex}
+\author{Nome e Cognome}
+\date{Data di esame}
+
+\begin{document}
+\pagenumbering{Roman}
+
+%%%% Opzione per interlinea 2
+\baselineskip 1.5em
+
+%% FRONTESPIZIO
+{ \thispagestyle{empty}
+
+
+\vskip 1cm \large \centerline{\textsc{Progetto Programmazione 3}}
+
+\begin{center}
+\includegraphics[scale=0.50]{logo_parthenope.png}
+\end{center}
+
+\vskip 0.5cm
+
+\large \centerline {\textsc{Gestionale - SistemaBancario}}
+
+\vskip 0.5cm
+
+\vskip 4.5cm
+
+
+\large
+\begin{minipage}[t]{7cm}
+\textsc{Docente}
+
+\textbf{Prof. Angelo Ciaramella}\newline
+
+\end{minipage}
+\hfill
+\begin{minipage}[t]{5.5cm}
+\textsc{Candidato}
+
+\textbf{Pasquale De Trino}
+\textbf{\\Matr. 012400/1637}
+
+\end{minipage}
+
+\vskip 2.0 cm \Large \centerline {Anno Accademico 2018-2019}
+\vfill \eject}
+
+
+%\newpage
+%\thispagestyle{plain}
+\markboth{Indice}{Indice}
+\tableofcontents
+
+\newpage
+
+\pagenumbering{arabic}
+\input{tesina_tex/capitolo1.tex}
+\input{tesina_tex/capitolo2.tex}
+\input{tesina_tex/capitolo3.tex}
+
+\newpage
+\pagestyle{plain}
+
+%\input{tesi_tex/ringraziamenti.tex}
+
+\end{document}
