@@ -97,26 +97,28 @@ response.setContentType("text/html");
 				"        </div>\r\n" + 
 				"    </div>");
 		
-		if(request.getParameter("sconto").equals("peppesalvi")) {
+		if(request.getParameter("sconto").equals("sconto1")) {
 			
-			int idUtente = AccediUtente.getId();
+			scontato = 1;
 			
-			Utente utente = new Utente(idUtente);
+			System.out.println("ho applicato lo sconto del 3 percento!");
+			out.println("<h1>Sconto del 3% applicato!</h1>");
+
+		}
+		
+		else if(request.getParameter("sconto").equals("sconto2")) { 			
+			scontato = 2;
 			
-			ContoCorrente conto;
-			if(utente.getTipoConto().equals("basic"))
-				conto = ContoBasic.getInstance();
+			System.out.println("ho applicato lo sconto del 5 percento!");
+			out.println("<h1>Sconto del 5% applicato!</h1>");
+
+		}
+		
+		else if(request.getParameter("sconto").equals("sconto3")) { 			
+			scontato = 3;
 			
-			else if(utente.getTipoConto().equals("medium"))
-				conto = ContoMedium.getInstance();
-			else
-				conto = ContoPremium.getInstance();
-			
-			
-			conto = new DecoratorConto(conto);
-			
-			System.out.println("ho applicato lo sconto --- !");
-			out.println("<h1>Sconto applicato!</h1>");
+			System.out.println("ho applicato lo sconto del 10 percento!");
+			out.println("<h1>Sconto del 10% applicato!</h1>");
 
 		}
 		else {
@@ -171,5 +173,9 @@ response.setContentType("text/html");
 				"</html>");
 			
 	}
+	
+	private static int scontato = 0;
+	public static int getScontato() { return scontato; }
+	public static void setScontato(int val) {scontato = val; }
 
 }

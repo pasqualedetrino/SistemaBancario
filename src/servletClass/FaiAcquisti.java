@@ -9,13 +9,8 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import sistemabancario.CartaDiCredito;
-import sistemabancario.CartaPrepagata;
-import sistemabancario.ContoBasic;
-import sistemabancario.ContoCorrente;
-import sistemabancario.ContoMedium;
-import sistemabancario.ContoPremium;
-import sistemabancario.Utente;
+import sistemabancario.*;
+
 
 /**
  * Servlet implementation class FaiAcquisti
@@ -130,6 +125,15 @@ public class FaiAcquisti extends HttpServlet {
 			conto.setIdUtente(idUtente);
 			conto.createMemento();
 			
+			int scontato = OttieniSconto.getScontato();
+			
+			if(scontato == 1)
+				conto = new DecoratorContoBase(conto);
+			else if(scontato == 2)
+				conto = new DecoratorContoMedio(conto);
+			else if(scontato == 3)
+				conto = new DecoratorContoAvanzato(conto);
+						
 			boolean prelievo = conto.preleva(prezzo);			// il pagamento è un movimento di tipo prelievo
 			System.out.println("saldo: " + conto.getSaldo());
 			System.out.println("prelievo: " + prelievo);

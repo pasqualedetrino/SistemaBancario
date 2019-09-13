@@ -36,15 +36,7 @@ public class AccediAmministratore extends HttpServlet {
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		
 		Login connesso = LoginFactory.getLogin(request.getParameter("username"), request.getParameter("password"), "amministratore");
-		
-		//request.setAttribute("amministratore", amministratore);
-		
-		//RequestDispatcher view = request.getRequestDispatcher("AmministratoreLoggato.jsp");
-		
-		//view.forward(request, response);
-		
-		// se l'accesso va a buon fine
-		
+				
 		if(connesso.Accedi(request.getParameter("username").toString(), request.getParameter("password").toString())) {
 			OperazioniAmministratore OpA = new OperazioniAmministratore();
 			
