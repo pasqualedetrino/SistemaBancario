@@ -1,0 +1,20 @@
+create table amministratore(username varchar(20) primary key, password varchar(20));
+
+create table utente(idUtente int auto_increment primary key, password varchar(20), nome varchar(20), cognome varchar(20), dataNascita varchar(20), via varchar(20), città varchar(20));
+
+create table contoCorrente(nConto int auto_increment primary key, saldo float, tipoConto varchar(20), idUtente int, foreign key (idUtente) references utente (idUtente));
+
+create table cartaPrepagata(numeroCarta int auto_increment primary key, iban int, cvv2 int, scadenza varchar(20), saldo float, idUtente int, foreign key (idUtente) references utente (idUtente));
+
+create table cartaDiCredito(numeroCarta int auto_increment primary key, cvv2 int, scadenza varchar(20), idUtente int, nConto int, foreign key (idUtente) references utente (idUtente), foreign key (nConto) references contoCorrente (nConto));
+
+create table movimenti(idMovimento int auto_increment primary key, Operazione int, importo float, idUtente int, foreign key (idUtente) references utente (idUtente), nConto int, foreign key (nConto) references contoCorrente (nConto));
+
+create table investimento(idUtente int primary key, tipo varchar(20), foreign key (idUtente) references utente (idUtente));
+
+drop table investimento;
+drop table movimenti;
+drop table cartadicredito;
+drop table cartaprepagata;
+drop table contocorrente;
+drop table utente;

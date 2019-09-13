@@ -1,0 +1,148 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>OperazioniAmministratore</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" type="image/png" href="assets/images/favicon.png">
+    <!-- Place favicon.ico in the root directory -->
+    <!-- all css here -->
+    <!-- bootstrap v3.3.7 css -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <!-- animate css -->
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <!-- owl.carousel.2.0.0-beta.2.4 css -->
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+    <!-- swiper.min.css -->
+    <link rel="stylesheet" href="assets/css/swiper.min.css">
+    <!-- font-awesome v4.6.3 css -->
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+    <!-- flaticon.css -->
+    <link rel="stylesheet" href="assets/css/flaticon.css">
+    <!-- magnific-popup.css -->
+    <link rel="stylesheet" href="assets/css/magnific-popup.css">
+    <!-- metisMenu.min.css -->
+    <link rel="stylesheet" href="assets/css/metisMenu.min.css">
+    <!-- style css -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <!-- responsive css -->
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <!-- modernizr css -->
+    <script src="assets/js/vendor/modernizr-2.8.3.min.js"></script>
+</head>
+
+<body>
+    <div class="breadcumb-area flex-style  black-opacity">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h2>Login</h2>
+                    <ul class="d-flex">
+                        <li><a href="../../index.html">Home</a></li>
+                        <li><i class="fa fa-angle-double-right"></i></li>
+                        <li><span><a href="AccediAmministratore.html">LoginAmministratore</span></a></li>
+						<li><i class="fa fa-angle-double-right"></i></li>
+                        <li><span>OperazioniAmministratore</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- breadcumb-area end -->
+	
+    <div class="contact-page-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="contact-form">
+						  <h3>Ricerca Utente per nome e cognome</h3>
+							  <form method="POST" action="../../RicercaUtente.do">
+								<div class="form-group">
+								  <label for="nome">nome:</label>
+								  <input type="text" class="form-control" id="nome" placeholder="Enter nome" name="nome" required>
+								</div>
+								<div class="form-group">
+								  <label for="cognome">cognome:</label>
+								  <input type="text" class="form-control" id="cognome" placeholder="Enter cognome" name="cognome" required>
+								</div>
+								<button type="submit" class="btn btn-primary">Submit</button>
+							  </form>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="contact-form">
+                        <ul class="border-bottom">
+						  <h3>Ricerca Utente per Id</h3>
+						  <form method="POST" action="	../../RicercaIdUtente.do">
+							<div class="form-group">
+							  <label for="idUtente">idUtente:</label>
+							  <input type="number" class="form-control" id="idUtente" placeholder="Enter IdUtente" name="idUtente" required>
+							</div>
+							<button type="submit" class="btn btn-primary">Submit</button>
+						  </form>
+                        </ul>
+                        <h3>Registra Utente</h3>
+                          <ul class="border-bottom">
+						  <form method="POST" action="RegistraUtente.html">
+							<div class="form-group">
+							  
+							</div>
+							<button type="submit" class="btn btn-primary">Submit</button>
+						  </form>
+                        </ul>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+   
+    <!-- footer-area start -->
+    <footer class="footer-area">
+        <div class="footer-top">
+            <div class="container">
+                <div class="row">
+				
+                    <div class="col">
+                        <div class="footer-widget footer-logo">
+                            
+                            <p>	Corso di Programmazione 3 Progetto Esame <br/>
+								Docente: Angelo Ciaramella A.A 2018/2019 <br/>
+								Traccia - Sistema Bancario</p>
+                        </div>
+                    </div>
+					
+					<div class="col">
+                        <div class="footer-widget footer-logo">
+                            
+                            <p>	Studente <br/>
+								Pasquale De Trino <br>
+								Matricola: 012400/1637</p>
+                        </div>
+                    </div>
+
+
+
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 copyright">
+                        <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank" class="text-primary">Colorlib</a>
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+</body>
+
+</html>

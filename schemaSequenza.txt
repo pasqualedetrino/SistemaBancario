@@ -1,0 +1,59 @@
+SCHEMA DI SEQUENZA
+
+home -> accedi come utente
+	 -> accedi come amministratore
+	 
+MODALITA' AMMINISTRATORE
+
+AccediAmministratore.html:	pagina che consente l'inserimento delle credenziali di accesso
+							azione: AccediAmministratore.do
+AccediAmministratore.do:	FACTORY PATTERN richiama LoginFactory.getLogin( credenziali lette da form)
+							se login ok: operazioniAmministratore.html
+							crea un oggetto operazioniamministratore per proporre una forma di investimento agli utenti
+operazioniAmministratore.ht	form per la ricerca utente tramite nome e cognome 
+							azione: RicercaUtente.do
+							form per la ricerca utente tramite idUtente
+							azione: RicercaIdUtente.do
+							
+							
+RicercaUtente.do:			nuovo oggetto operazioniAmministratore, verrà cosi caricata la hashMap con le anagrafiche 
+							degli utenti
+							ricercaCorrentista, se ok stampa info 
+							altrimenti: RegistraUtente.html
+RicercaIdUtente.do:			idem
+
+RegistraUtente.html			form con le info anagrafiche + tipo di conto + saldo (uguale per carta 	
+							prepagata e contoCorrente)
+							azione: RegistraUtente.do
+RegistraUtente.do			nuovo oggetto operazioniAmministratore, inserimentoUtente
+							ContoCorrente.RegistraConto: salva il nuovo contoCorrente con il relativo saldo
+							a seconda del tipo di conto modifica il saldo con le tariffe varie e aggiorna il db
+
+
+MODALITA UTENTE
+
+AccediUtente.html			form per iserire le credenziali di accesso
+							azione: AccediUtente.do
+AccediUtente.do				FACTORY PATTERN richiama LoginFactory.getLogin( credenziali lette da form)
+							se login ok: crea un utente, verrà cosi caricato il suo tipo di conto, il saldo e il numero del conto.
+							possibilità di visualizzare le operazioni: OperazioniUtente.do
+							fare acquisti:	Acquisti.html
+							fare un investimento: ScegliInvestimento.do
+OperazioniUtente.do			preleva l'idUtente dalla servlet AccediUtente, crea un conto Corrente e setto l'idUtente
+							conto.storicoMovimenti ritorna un array con i movimenti fatti dall'utente
+							la risposta è visualizzata in una tabella
+Acquisti.html				form che prende il prezzo, il nome dell'articolo, e il metodo di pagamento
+							azione:	FaiAcquisti.do
+FaiAcquisti.do				prende i dati dalla form, crea la carta di credito o la prepagata 
+							crea il memento
+							poi usa per fare l'acquisto	STRATEGY
+							se l'acquisto è possibile, va fatto l'acquisto tenendo conto dell'eventuale commissione
+							possibilità di annullare l'ultimo acquisto: MementoAcquisti.do
+MementoAcquisti.do			prende dalla servlet FaiAcquisti.do il conto
+							conto.annullaOperazione: prende il vecchio saldo, memorizza l'operazione e aggiorna il db
+ScegliInvestimento.do		se ci sono investimenti consigliati li propone
+							propone anche le restanti formule di investimento
+							chiede quanto investire 
+							richiama EffettuaInvestimento.do
+EffettuaInvestimento.do		legge che tipo di investimento preparare e lo passa al 
+							

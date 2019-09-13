@@ -1,0 +1,24 @@
+FUNZIONALITA'
+
+Utente
+	fare acquisti tramite una carta
+		(CartaPrepagata)
+			scala dal saldo
+		(CartaDiCredito)
+			in base al tipo di conto corrente posseduto 
+				crea il memento
+				paga 
+				aggiorna il saldo
+				salva il movimento
+				
+		
+	visualizza le informazioni sulle proprie operazioni
+		stampa anagrafiche
+		stampa storico movimenti
+		stampa saldo attuale
+		
+	
+
+	
+			
+		
