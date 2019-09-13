@@ -13,7 +13,7 @@ import javax.servlet.http.HttpServletResponse;
 import sistemabancario.Login;
 import sistemabancario.LoginFactory;
 import sistemabancario.OperazioniAmministratore;
-import sistemabancario.testDB;
+
 
 /**
  * Servlet implementation class AccediAmministratore

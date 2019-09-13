@@ -47,7 +47,7 @@ public class EffettuaInvestimento extends HttpServlet {
 		
 		int importo = Integer.valueOf(request.getParameter("importo"));
 		
-		System.out.println("zio ha detto che vuole: " + tipoInvestimento);
+		System.out.println("tipoInvestimento: " + tipoInvestimento);
 		
 		
 		
@@ -73,7 +73,7 @@ public class EffettuaInvestimento extends HttpServlet {
 		
 		System.out.println("risultato dell'investimento: " + risultato);
 		
-response.setContentType("text/html");
+		response.setContentType("text/html");
 		
 		PrintWriter out = response.getWriter(); 
 	

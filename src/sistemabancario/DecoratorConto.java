@@ -1,6 +1,6 @@
 package sistemabancario;
 
-public interface DecoratorConto {
-	public boolean preleva(float importo);
-
+public abstract class  DecoratorConto extends ContoCorrente {
+	public abstract boolean preleva(float importo);
+	
 }

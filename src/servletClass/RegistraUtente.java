@@ -36,7 +36,6 @@ public class RegistraUtente extends HttpServlet {
 	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		System.out.println("sto nella servlet");
 		System.out.println("data di nascita letta " + request.getParameter("dataNascita"));
 		OperazioniAmministratore operazioniAmministratore = new OperazioniAmministratore();
 		
