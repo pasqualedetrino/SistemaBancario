@@ -2,6 +2,7 @@ package servletClass;
 
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.util.ArrayList;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -34,9 +35,8 @@ public class RicercaUtente extends HttpServlet {
 		
 		OperazioniAmministratore operazioniAmministratore = new OperazioniAmministratore();
 		
-		rispostaRicerca = operazioniAmministratore.ricercaCorrentista(request.getParameter("nome"), request.getParameter("cognome"));
-		Utente u = new Utente(rispostaRicerca.getIdUtente());
-		idUtente = rispostaRicerca.getIdUtente();
+		ArrayList<RispostaRicerca> arrayRisposta = operazioniAmministratore.ricercaCorrentista(request.getParameter("nome"), request.getParameter("cognome"));
+		
 		response.setContentType("text/html");
 		
 		PrintWriter out = response.getWriter(); 
@@ -94,48 +94,51 @@ public class RicercaUtente extends HttpServlet {
 					"        </div>\r\n" + 
 					"    </div>");
 		
-		if(!rispostaRicerca.getDataNascita().equals("nonEsiste")) {	
-			out.println( 
-					"  <table class=\"table table-striped\">\r\n" + 
-					"    <thead>\r\n" + 
-					"      <tr>\r\n" + 
-					"        <th>dataNascita</th>\r\n" + 
-					"        <th>via</th>\r\n" +
-					"        <th>citta'</th>\r\n" + 
-					"        <th>numeroConto</th>\r\n" +
-					"        <th>tipoConto</th>\r\n" + 
-					"        <th>saldo</th>\r\n" + 
-					"        <th>saldoPrepagata</th>\r\n" +
-					"      </tr>\r\n" + 
-					"    </thead>\r\n" + 
-					"    <tbody>\r\n");
+		for(RispostaRicerca r : arrayRisposta) {
+			Utente u = new Utente(r.getIdUtente());
 			
-			out.println("<tr>\r\n" + 
-					" <td>" + rispostaRicerca.getDataNascita() + "</td>\r\n" + 
-					" <td>" + rispostaRicerca.getVia() + "</td>\r\n" +
-					" <td>" + rispostaRicerca.getCitta() + "</td>\r\n" +
-					" <td>" + rispostaRicerca.getNConto() + "</td>\r\n" +
-					" <td>" + rispostaRicerca.getTipoConto() + "</td>\r\n" +
-					" <td>" + rispostaRicerca.getSaldo() + "</td>\r\n" +
-					" <td>" + u.getSaldoPrepagata() + "</td>\r\n" +
-					"<form method=\"POST\" action=\"./tema/coinbuzz/VersaPrepagata.html\"><td><button type=\"submit\" class=\"btn btn-primary\">RicaricaPrepagata</button><td></form>" +
-					"<form method=\"POST\" action=\"./tema/coinbuzz/VersaConto.html\"><td><button type=\"submit\" class=\"btn btn-primary\">RicaricaConto</button><td></form>" +
-					
-					" </tr>\r\n");
+			System.out.println("u.getNconto: " + r.getNConto());
+		
+			if(!r.getDataNascita().equals("nonEsiste")) {	
+				out.println( 
+						"  <table class=\"table table-striped\">\r\n" + 
+						"    <thead>\r\n" + 
+						"      <tr>\r\n" + 
+						"        <th>dataNascita</th>\r\n" + 
+						"        <th>via</th>\r\n" +
+						"        <th>citta'</th>\r\n" + 
+						"        <th>numeroConto</th>\r\n" +
+						"        <th>tipoConto</th>\r\n" + 
+						"        <th>saldo</th>\r\n" + 
+						"        <th>saldoPrepagata</th>\r\n" +
+						"      </tr>\r\n" + 
+						"    </thead>\r\n" + 
+						"    <tbody>\r\n");
 			
-			out.println("    </tbody>\r\n" + 
-					"  </table>\r\n" + 
-					"</div>\r\n" + 
-					"\r\n" + 
-					"</body>\r\n" + 
-					"</html>");
-			
+				out.println("<tr>\r\n" + 
+						" <td>" + r.getDataNascita() + "</td>\r\n" + 
+						" <td>" + r.getVia() + "</td>\r\n" +
+						" <td>" + r.getCitta() + "</td>\r\n" +
+						" <td>" + r.getNConto() + "</td>\r\n" +
+						" <td>" + r.getTipoConto() + "</td>\r\n" +
+						" <td>" + r.getSaldo() + "</td>\r\n" +
+						" <td>" + u.getSaldoPrepagata() + "</td>\r\n" +
+						
+						" </tr>\r\n");		
+			}
+			else {
+				out.println("<br/><br/><br/>utente non trovato!");
+				out.println("<a href = \"./tema/coinbuzz/RegistraUtente.html\">Registra Utente</a><br/><br/><br/>");
+				break;
+				
+			}
 		}
-		else {
-			out.println("<br/><br/><br/>utente non trovato!");
-			out.println("<a href = \"./tema/coinbuzz/RegistraUtente.html\">Registra Utente</a><br/><br/><br/>");
-			
-		}
+		out.println("    </tbody>\r\n" + 
+				"  </table>\r\n" + 
+				"</div>\r\n" + 
+				"\r\n" + 
+				"</body>\r\n" + 
+				"</html>");
 		
 		out.println("    <!-- footer-area start -->\r\n" + 
 				"    <footer class=\"footer-area\">\r\n" + 
@@ -184,10 +187,9 @@ public class RicercaUtente extends HttpServlet {
 				"</html>");
 		
 		
+		arrayRisposta.clear();
 	}
 	
-	private static RispostaRicerca rispostaRicerca;
-	public static RispostaRicerca getRisposta() {return rispostaRicerca;}
 	private static int idUtente = 0;
 	public static int getIdUtente() { return idUtente; }
 	public static void setIdUtente(int id) {idUtente = id; }
