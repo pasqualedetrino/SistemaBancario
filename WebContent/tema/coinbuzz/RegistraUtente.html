@@ -71,6 +71,23 @@
                 return (true);
             }
         </script>
+        
+        		    <script type="text/javascript">
+            function rb_controllo(){
+                var rb_scelto = false;
+                
+                for (counter = 0; counter < document.myform.tipoConto.length; counter++) {
+                    if (document.myform.tipoConto[counter].checked) 
+                        rb_scelto = true;
+                }
+                
+                if (!rb_scelto) {
+                    alert("Selezionare almeno un'opzione");
+                    return (false);
+                }
+                return (true);
+            }
+        </script>
 	
     <div class="breadcumb-area flex-style  black-opacity">
         <div class="container">

@@ -73,7 +73,7 @@ response.setContentType("text/html");
 				"            <div class=\"row\">\r\n" + 
 				"                <div class=\"col-12\">\r\n" + 
 				"                    <ul class=\"d-flex\">\r\n" + 
-				"                        <li><a href=\"./tema/coinbuzz/index.html\">Home</a></li>\r\n" + 
+				"                        <li><a href=\"./tema/coinbuzz/../../index.html\">Home</a></li>\r\n" + 
 				"                        <li><i class=\"fa fa-angle-double-right\"></i></li>\r\n" + 
 				"                        <li><span><a href=\"./tema/coinbuzz/OperazioniAmministratore.html\">OperazioniAmministratore</span></a></li>\r\n" + 
 				"						<li><i class=\"fa fa-angle-double-right\"></i></li>\r\n" + 

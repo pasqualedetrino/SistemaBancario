@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6930 64-bit) (preloaded format=pdflatex 2019.1.8)  13 SEP 2019 16:19
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6930 64-bit) (preloaded format=pdflatex 2019.1.8)  14 SEP 2019 17:11
 entering extended mode
 **./Template.tex
 (Template.tex
@@ -306,8 +306,8 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 )
 Package hyperref Info: Option `colorlinks' set `true' on input line 12.
 
-(C:\Users\PASQUALE\eclipse-workspace\SistemaBancarioIndex\TEX_Ciaramella\TEX\bu
-ild\Template.aux)
+(C:\Users\PASQUALE\eclipse-workspace\SistemaBancarioIndex\Relazione\TEX\build\T
+emplate.aux)
 \openout1 = `Template.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 23.
@@ -394,14 +394,14 @@ LaTeX Info: Redefining \ref on input line 23.
 LaTeX Info: Redefining \pageref on input line 23.
 LaTeX Info: Redefining \nameref on input line 23.
 
-(C:\Users\PASQUALE\eclipse-workspace\SistemaBancarioIndex\TEX_Ciaramella\TEX\bu
-ild\Template.out)
-(C:\Users\PASQUALE\eclipse-workspace\SistemaBancarioIndex\TEX_Ciaramella\TEX\bu
-ild\Template.out)
+(C:\Users\PASQUALE\eclipse-workspace\SistemaBancarioIndex\Relazione\TEX\build\T
+emplate.out)
+(C:\Users\PASQUALE\eclipse-workspace\SistemaBancarioIndex\Relazione\TEX\build\T
+emplate.out)
 \@outlinefile=\write3
 \openout3 = `Template.out'.
 
-<img/logo_parthenope.png, id=43, 505.89pt x 506.89375pt>
+<img/logo_parthenope.png, id=51, 505.89pt x 506.89375pt>
 File: img/logo_parthenope.png Graphic file (type png)
 <use img/logo_parthenope.png>
 Package pdftex.def Info: img/logo_parthenope.png  used on input line 36.
@@ -415,24 +415,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 52--53
 
 {C:/Users/PASQUALE/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map} <./img/lo
 go_parthenope.png>]
-(C:\Users\PASQUALE\eclipse-workspace\SistemaBancarioIndex\TEX_Ciaramella\TEX\bu
-ild\Template.toc
-LaTeX Font Info:    Try loading font information for U+msa on input line 5.
 
-("C:\Users\PASQUALE\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsfonts\umsa.f
-d"
-File: umsa.fd 2013/01/14 v3.01 AMS symbols A
-)
-LaTeX Font Info:    Try loading font information for U+msb on input line 5.
+Package hyperref Warning: old toc file detected, not used; run LaTeX again.
 
-("C:\Users\PASQUALE\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsfonts\umsb.f
-d"
-File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-))
 \tf@toc=\write4
 \openout4 = `Template.toc'.
 
- [2
+[2
 
 ] (tesina_tex/capitolo1.tex
 Capitolo 1.
@@ -469,7 +458,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 7--8
 
  []
 
-<img/FactoryPattern.png, id=81, 1064.97874pt x 393.47pt>
+<img/FactoryPattern.png, id=79, 1064.97874pt x 393.47pt>
 File: img/FactoryPattern.png Graphic file (type png)
 <use img/FactoryPattern.png>
 Package pdftex.def Info: img/FactoryPattern.png  used on input line 9.
@@ -486,7 +475,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 13--15
 
  []
 
-<img/CoR.png, id=88, 853.1875pt x 409.53pt>
+<img/CoR.png, id=84, 853.1875pt x 409.53pt>
 File: img/CoR.png Graphic file (type png)
 <use img/CoR.png>
 Package pdftex.def Info: img/CoR.png  used on input line 16.
@@ -497,7 +486,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 20--21
  []
 
 [5 <./img/FactoryPattern.png> <./img/CoR.png>]
-<img/TemplateMethod.png, id=95, 958.58125pt x 337.26pt>
+<img/TemplateMethod.png, id=90, 958.58125pt x 337.26pt>
 File: img/TemplateMethod.png Graphic file (type png)
 <use img/TemplateMethod.png>
 Package pdftex.def Info: img/TemplateMethod.png  used on input line 22.
@@ -507,7 +496,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 26--27
 
  []
 
-<img/Memento.png, id=96, 1093.08376pt x 329.23pt>
+<img/Memento.png, id=91, 1093.08376pt x 329.23pt>
 File: img/Memento.png Graphic file (type png)
 <use img/Memento.png>
 Package pdftex.def Info: img/Memento.png  used on input line 28.
@@ -523,80 +512,60 @@ Underfull \hbox (badness 10000) in paragraph at lines 32--33
  []
 
 [6 <./img/TemplateMethod.png> <./img/Memento.png>]
-<img/Strategy.png, id=103, 645.41125pt x 808.01875pt>
+<img/Strategy.png, id=96, 645.41125pt x 808.01875pt>
 File: img/Strategy.png Graphic file (type png)
 <use img/Strategy.png>
 Package pdftex.def Info: img/Strategy.png  used on input line 34.
 (pdftex.def)             Requested size: 258.15993pt x 323.20177pt.
-
+ [7 <./img/Strategy.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 38--39
 
  []
 
-[7 <./img/Strategy.png>]
-File: img/Strategy.png Graphic file (type png)
-<use img/Strategy.png>
-Package pdftex.def Info: img/Strategy.png  used on input line 40.
-(pdftex.def)             Requested size: 258.15993pt x 323.20177pt.
+<img/Decorator.png, id=101, 855.195pt x 377.41pt>
+File: img/Decorator.png Graphic file (type png)
+<use img/Decorator.png>
+Package pdftex.def Info: img/Decorator.png  used on input line 40.
+(pdftex.def)             Requested size: 342.07195pt x 150.96132pt.
 
 Underfull \hbox (badness 10000) in paragraph at lines 43--44
 
  []
 
-) [8]
+) [8 <./img/Decorator.png>]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 85.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 85.
 
-(C:\Users\PASQUALE\eclipse-workspace\SistemaBancarioIndex\TEX_Ciaramella\TEX\bu
-ild\Template.aux)
+(C:\Users\PASQUALE\eclipse-workspace\SistemaBancarioIndex\Relazione\TEX\build\T
+emplate.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 85.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 85.
+Package rerunfilecheck Info: File `Template.out' has not changed.
+(rerunfilecheck)             Checksum: D8E58C96222A8FD36753E389426DFF1D;691.
 
-
-Package rerunfilecheck Warning: File `Template.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `Template.out':
-(rerunfilecheck)             Before: 9EA74496077677AAD7C0DFCE0797FC0F;623
-(rerunfilecheck)             After:  D8E58C96222A8FD36753E389426DFF1D;691.
 
 LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
  ) 
 Here is how much of TeX's memory you used:
- 6764 strings out of 492946
- 100460 string characters out of 3124935
- 202237 words of memory out of 3000000
- 10525 multiletter control sequences out of 15000+200000
- 11062 words of font info for 41 fonts, out of 3000000 for 9000
+ 6722 strings out of 492946
+ 99507 string characters out of 3124935
+ 202061 words of memory out of 3000000
+ 10508 multiletter control sequences out of 15000+200000
+ 6715 words of font info for 24 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  32i,5n,28p,804b,406s stack positions out of 5000i,500n,10000p,200000b,50000s
-pdfTeX warning (dest): name{subsection.2.2.6} has been referenced but does no
-t exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.2.2.5} has been referenced but does not 
-exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.2.2.4} has been referenced but does not 
-exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.2.2.3} has been referenced but does not 
-exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.2.2.2} has been referenced but does not 
-exist, replaced by a fixed one
-
-<C:/Users/PASQUALE/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfont
-s/cm/cmbx12.pfb><C:/Users/PASQUALE/AppData/Local/Programs/MiKTeX 2.9/fonts/type
-1/public/amsfonts/cm/cmcsc10.pfb><C:/Users/PASQUALE/AppData/Local/Programs/MiKT
-eX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/PASQUALE/AppData/Loca
-l/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/PASQUA
-LE/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsl12.pfb>
-Output written on C:\Users\PASQUALE\eclipse-workspace\SistemaBancarioIndex\TEX_
-Ciaramella\TEX\build\Template.pdf (10 pages, 477763 bytes).
+<C:/Users/PASQUALE/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfo
+nts/cm/cmbx12.pfb><C:/Users/PASQUALE/AppData/Local/Programs/MiKTeX 2.9/fonts/ty
+pe1/public/amsfonts/cm/cmcsc10.pfb><C:/Users/PASQUALE/AppData/Local/Programs/Mi
+KTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/PASQUALE/AppData/Lo
+cal/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/PASQ
+UALE/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsl12.pf
+b>
+Output written on C:\Users\PASQUALE\eclipse-workspace\SistemaBancarioIndex\Rela
+zione\TEX\build\Template.pdf (10 pages, 486173 bytes).
 PDF statistics:
- 139 PDF objects out of 1000 (max. 8388607)
- 29 named destinations out of 1000 (max. 500000)
- 111 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 130 PDF objects out of 1000 (max. 8388607)
+ 24 named destinations out of 1000 (max. 500000)
+ 132 words of extra memory for PDF output out of 10000 (max. 10000000)
 

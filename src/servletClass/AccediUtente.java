@@ -153,7 +153,7 @@ public class AccediUtente extends HttpServlet {
 					"                                        <img src=\"./tema/coinbuzz/assets/images/featured/6.jpg\" alt=\"\">\r\n" + 
 					"                                    </div>\r\n" + 
 					"                                    <h2><a href=\"./tema/coinbuzz/OttieniSconto.html\">Ottieni sconto</a></h2>\r\n" + 
-					"                                    <p>There are many variations of passages of Lorem the Ipsum available, but the majority have suffered that alteration in some form.</p>\r\n" + 
+					"                                    <p>Utilizza il tuo coupon per ottenere fino al 10% di sconto sui tuoi acquisti</p>\r\n" + 
 					"                                </div>\r\n" + 
 					"                            </div>\r\n" + 
 					"                        </div>\r\n" + 
