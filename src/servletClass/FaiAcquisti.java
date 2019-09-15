@@ -149,8 +149,8 @@ public class FaiAcquisti extends HttpServlet {
 		if(metodoPagamento.equals("prepagata")) {
 			if(pagato)
 				out.println("<h1> pagamento effettuato! </h1>");
-			else
-				out.println("<h1> pagamento non possibile! </h1>");
+			//else
+				//out.println("<h1> pagamento non possibile! </h1>");
 		}
 			
 		out.println("<!-- footer-area start -->\r\n" + 
