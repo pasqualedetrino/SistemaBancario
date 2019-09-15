@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6930 64-bit) (preloaded format=pdflatex 2019.1.8)  14 SEP 2019 17:11
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6930 64-bit) (preloaded format=pdflatex 2019.1.8)  15 SEP 2019 11:08
 entering extended mode
 **./Template.tex
 (Template.tex
@@ -415,13 +415,24 @@ Underfull \hbox (badness 10000) in paragraph at lines 52--53
 
 {C:/Users/PASQUALE/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map} <./img/lo
 go_parthenope.png>]
+(C:\Users\PASQUALE\eclipse-workspace\SistemaBancarioIndex\Relazione\TEX\build\T
+emplate.toc
+LaTeX Font Info:    Try loading font information for U+msa on input line 5.
 
-Package hyperref Warning: old toc file detected, not used; run LaTeX again.
+("C:\Users\PASQUALE\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsfonts\umsa.f
+d"
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 5.
 
+("C:\Users\PASQUALE\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsfonts\umsb.f
+d"
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+))
 \tf@toc=\write4
 \openout4 = `Template.toc'.
 
-[2
+ [2
 
 ] (tesina_tex/capitolo1.tex
 Capitolo 1.
@@ -458,7 +469,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 7--8
 
  []
 
-<img/FactoryPattern.png, id=79, 1064.97874pt x 393.47pt>
+<img/FactoryPattern.png, id=91, 1064.97874pt x 393.47pt>
 File: img/FactoryPattern.png Graphic file (type png)
 <use img/FactoryPattern.png>
 Package pdftex.def Info: img/FactoryPattern.png  used on input line 9.
@@ -475,7 +486,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 13--15
 
  []
 
-<img/CoR.png, id=84, 853.1875pt x 409.53pt>
+<img/CoR.png, id=96, 853.1875pt x 409.53pt>
 File: img/CoR.png Graphic file (type png)
 <use img/CoR.png>
 Package pdftex.def Info: img/CoR.png  used on input line 16.
@@ -486,7 +497,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 20--21
  []
 
 [5 <./img/FactoryPattern.png> <./img/CoR.png>]
-<img/TemplateMethod.png, id=90, 958.58125pt x 337.26pt>
+<img/TemplateMethod.png, id=102, 958.58125pt x 337.26pt>
 File: img/TemplateMethod.png Graphic file (type png)
 <use img/TemplateMethod.png>
 Package pdftex.def Info: img/TemplateMethod.png  used on input line 22.
@@ -496,7 +507,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 26--27
 
  []
 
-<img/Memento.png, id=91, 1093.08376pt x 329.23pt>
+<img/Memento.png, id=103, 1093.08376pt x 329.23pt>
 File: img/Memento.png Graphic file (type png)
 <use img/Memento.png>
 Package pdftex.def Info: img/Memento.png  used on input line 28.
@@ -512,7 +523,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 32--33
  []
 
 [6 <./img/TemplateMethod.png> <./img/Memento.png>]
-<img/Strategy.png, id=96, 645.41125pt x 808.01875pt>
+<img/Strategy.png, id=108, 645.41125pt x 808.01875pt>
 File: img/Strategy.png Graphic file (type png)
 <use img/Strategy.png>
 Package pdftex.def Info: img/Strategy.png  used on input line 34.
@@ -522,7 +533,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 38--39
 
  []
 
-<img/Decorator.png, id=101, 855.195pt x 377.41pt>
+<img/Decorator.png, id=113, 855.195pt x 377.41pt>
 File: img/Decorator.png Graphic file (type png)
 <use img/Decorator.png>
 Package pdftex.def Info: img/Decorator.png  used on input line 40.
@@ -542,17 +553,13 @@ Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 85.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 85.
 Package rerunfilecheck Info: File `Template.out' has not changed.
 (rerunfilecheck)             Checksum: D8E58C96222A8FD36753E389426DFF1D;691.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
  ) 
 Here is how much of TeX's memory you used:
- 6722 strings out of 492946
- 99507 string characters out of 3124935
- 202061 words of memory out of 3000000
- 10508 multiletter control sequences out of 15000+200000
- 6715 words of font info for 24 fonts, out of 3000000 for 9000
+ 6766 strings out of 492946
+ 100384 string characters out of 3124935
+ 202275 words of memory out of 3000000
+ 10531 multiletter control sequences out of 15000+200000
+ 11062 words of font info for 41 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  32i,5n,28p,804b,406s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Users/PASQUALE/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfo
@@ -563,9 +570,9 @@ cal/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/PASQ
 UALE/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsl12.pf
 b>
 Output written on C:\Users\PASQUALE\eclipse-workspace\SistemaBancarioIndex\Rela
-zione\TEX\build\Template.pdf (10 pages, 486173 bytes).
+zione\TEX\build\Template.pdf (10 pages, 489172 bytes).
 PDF statistics:
- 130 PDF objects out of 1000 (max. 8388607)
+ 142 PDF objects out of 1000 (max. 8388607)
  24 named destinations out of 1000 (max. 500000)
  132 words of extra memory for PDF output out of 10000 (max. 10000000)
 
