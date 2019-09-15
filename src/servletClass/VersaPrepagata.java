@@ -49,7 +49,7 @@ public class VersaPrepagata extends HttpServlet {
 		
 		cartaPrepagata.versa(versamento);
 		
-response.setContentType("text/html");
+		response.setContentType("text/html");
 		
 		PrintWriter out = response.getWriter(); 
 	

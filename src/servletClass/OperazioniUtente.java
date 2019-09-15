@@ -45,7 +45,7 @@ public class OperazioniUtente extends HttpServlet {
 				"<head>\r\n" + 
 				"    <meta charset=\"utf-8\">\r\n" + 
 				"    <meta http-equiv=\"x-ua-compatible\" content=\"ie=edge\">\r\n" + 
-				"    <title>Pagamento</title>\r\n" + 
+				"    <title>Operazioni</title>\r\n" + 
 				"    <meta name=\"description\" content=\"\">\r\n" + 
 				"    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\r\n" + 
 				"    <link rel=\"shortcut icon\" type=\"image/png\" href=\"./tema/coinbuzz/assets/images/favicon.png\">\r\n" + 
@@ -80,13 +80,13 @@ public class OperazioniUtente extends HttpServlet {
 				"        <div class=\"container\">\r\n" + 
 				"            <div class=\"row\">\r\n" + 
 				"                <div class=\"col-12\">\r\n" + 
-				"                    <h2>Login</h2>\r\n" + 
+				"                    <h2>Operazioni</h2>\r\n" + 
 				"                    <ul class=\"d-flex\">\r\n" + 
 				"                        <li><a href=\"./tema/coinbuzz/../../index.html\">Home</a></li>\r\n" + 
 				"                        <li><i class=\"fa fa-angle-double-right\"></i></li>\r\n" + 
 				"                        <li><span><a href=\"AccediUtente.do\">info Utente</span></a></li>\r\n" + 
 				"						<li><i class=\"fa fa-angle-double-right\"></i></li>\r\n" + 
-				"                        <li><span>Pagamento</span></li>\r\n" + 
+				"                        <li><span>Operazioni</span></li>\r\n" + 
 				"                    </ul>\r\n" + 
 				"                </div>\r\n" + 
 				"            </div>\r\n" + 

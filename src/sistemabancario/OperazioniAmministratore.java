@@ -99,12 +99,15 @@ public class OperazioniAmministratore {
 	public ArrayList<RispostaRicerca> ricercaCorrentista(String nome, String cognome) {
 		ArrayList<RispostaRicerca> arrayRisposta = new ArrayList<RispostaRicerca>();
 		boolean trovato = false;
+		boolean notexists = false;
+		
 		int id = 0;
 		RispostaRicerca rispostaRicerca;
 		
-		for(Utente u : utenteMap.values())
+		for(Utente u : utenteMap.values()) {
 			if(u.getNome().equals(nome) && u.getCognome().equals(cognome)) {
-				trovato = true;
+				trovato = true;	// se trovo prendo le restanti info 
+				notexists = true;	// se trovo non faccio scattare l'errore
 				id = u.getIdUtente();	// solo per veirificare
 				dataNascita = u.getDataNascita();
 				via = u.getVia();
@@ -113,50 +116,47 @@ public class OperazioniAmministratore {
 				String nConto = "vuoto", tipoConto = "vuoto";
 				float saldo = 0.f;
 		
-			if(trovato) {
-	
-				// dato l'id dell'utente vado a leggere le info relative ai dati anagrafici e al contocorrente
-		    	try {  
-					Class.forName("com.mysql.cj.jdbc.Driver");  
-					Connection con=DriverManager.getConnection("jdbc:mysql://localhost:3306/db?useTimezone=true&serverTimezone=UTC","root","ciao");  
-					  
-					Statement stmt=con.createStatement();  
-					String query = "select * from contocorrente where idUtente = '" + id + "'";
-					System.out.println("query: " + query);
-					ResultSet rs=stmt.executeQuery(query);  
-					
-					// per ogni utente carico le informazioni e le inserisco in una hashMap
-					if(rs.next()) {
-						nConto = rs.getString(1);
-						saldo= rs.getFloat(2);
-						tipoConto = rs.getString(3);
+				if(trovato) {
+		
+					// dato l'id dell'utente vado a leggere le info relative ai dati anagrafici e al contocorrente
+			    	try {  
+						Class.forName("com.mysql.cj.jdbc.Driver");  
+						Connection con=DriverManager.getConnection("jdbc:mysql://localhost:3306/db?useTimezone=true&serverTimezone=UTC","root","ciao");  
+						  
+						Statement stmt=con.createStatement();  
+						String query = "select * from contocorrente where idUtente = '" + id + "'";
+						System.out.println("query: " + query);
+						ResultSet rs=stmt.executeQuery(query);  
 						
-						RispostaRicerca risposta = new RispostaRicerca(dataNascita, via, citta, nConto, saldo, tipoConto, id);
+						// per ogni utente carico le informazioni e le inserisco in una hashMap
+						if(rs.next()) {
+							nConto = rs.getString(1);
+							saldo= rs.getFloat(2);
+							tipoConto = rs.getString(3);
+							
+							RispostaRicerca risposta = new RispostaRicerca(dataNascita, via, citta, nConto, saldo, tipoConto, id);
+							
+							arrayRisposta.add(risposta);
+						}
+							
 						
-						arrayRisposta.add(risposta);
-					}
-						
-					
-					con.close();	  
-				} catch(Exception e) {System.out.println("nessun conto corrente"); System.out.println(e);}
-		    	trovato = false;
-	    	
+						con.close();	  
+					} catch(Exception e) {System.out.println("nessun conto corrente"); System.out.println(e);}
+			    	trovato = false;
+		    	
+				}
+		    	
 			}
-	    	
 		}
-			
-		else {
+		// se non trovo almeno un utente
+		if(!notexists){
 				dataNascita ="nonEsiste";
 				System.out.println("utente non presente!");
 				RispostaRicerca risposta = new RispostaRicerca("nonEsiste", via, citta, "3", 3.2f, "nessuno", id);
 				arrayRisposta.add(risposta);
 			
 			}
-		
-		
-		
 
-		
 		return arrayRisposta;
 	}
 		

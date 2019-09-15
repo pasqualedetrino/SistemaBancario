@@ -98,7 +98,7 @@ public class FaiAcquisti extends HttpServlet {
 				"        <div class=\"container\">\r\n" + 
 				"            <div class=\"row\">\r\n" + 
 				"                <div class=\"col-12\">\r\n" + 
-				"                    <h2>Login</h2>\r\n" + 
+				"                    <h2>Pagamento</h2>\r\n" + 
 				"                    <ul class=\"d-flex\">\r\n" + 
 				"                        <li><a href=\"./tema/coinbuzz/../../index.html\">Home</a></li>\r\n" + 
 				"                        <li><i class=\"fa fa-angle-double-right\"></i></li>\r\n" + 
